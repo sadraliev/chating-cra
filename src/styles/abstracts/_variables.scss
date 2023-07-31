@@ -1,0 +1,47 @@
+
+$font-primary: 'Lato', sans-serif;
+
+$fs-xs: 12px;
+$lh-xs: 9px;
+$fw-normal: 400;
+$fw-bold: 700;
+
+$fs-sm: 13px;
+$lh-sm: 20px;
+
+$fs-base: 15px;
+$lh-base: 20px;
+
+$fs-lg: 18px;
+$lh-lg: 24px;
+
+$fs-xl: 24px;
+$lh-xl: 32px;
+
+$font-sizes: (
+    '12': 12px,
+    '13': 13px,
+    '15': 15px,
+    '18': 18px,
+    '24': 24px
+);
+
+$line-heights: (
+    '9': 9px,
+    '16': 16px,
+    '20': 20px,
+    '24': 24px,
+    '32': 32px
+);
+
+
+$blue: rgba(64, 126, 201, 1);
+$blue-light: rgba(64, 126, 201, 0.08);
+
+$black: rgba(0, 0, 0, 1);
+
+$gray: rgba(91, 104, 136, 1);
+
+$dark: rgba(32, 31, 30, 1);
+$dark-light: rgba(32, 31, 30, 0.04);
+

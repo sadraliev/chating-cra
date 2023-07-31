@@ -1,0 +1,15 @@
+@mixin generate-font-sizes($sizes) {
+    @each $size, $value in $sizes {
+        .fs-#{$size} {
+            font-size: $value;
+        }
+    }
+}
+
+@mixin generate-line-heights($heights) {
+    @each $name, $value in $heights {
+        .lh-#{$name} {
+            line-height: $value;
+        }
+    }
+}
