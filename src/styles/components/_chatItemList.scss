@@ -1,0 +1,9 @@
+.chat-item {
+  cursor: pointer;
+  &--selected {
+    background-color: $blue-light;
+  }
+  &:hover {
+    background-color: $dark-light;
+  }
+}

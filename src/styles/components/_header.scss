@@ -1,3 +1,11 @@
 .shadow-inset-top-thin-dark {
-    box-shadow: 0px -1px 0px 0px rgba(32, 31, 30, 0.12) inset;
+  box-shadow: 0px -1px 0px 0px rgba(32, 31, 30, 0.12) inset;
+}
+.header {
+  background-color: #fff;
+  &--sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
 }

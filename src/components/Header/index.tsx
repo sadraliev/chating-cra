@@ -7,7 +7,7 @@ interface HeaderProps {
 }
 
 export const Header: FC<HeaderProps> = ({ text, icon, shadow = false }) => {
-  const style = `flex  items-center text-black text-lg font-bold py-20 pl-16 ${
+  const style = `header header--sticky flex  items-center text-black text-lg font-bold py-20 pl-16 ${
     shadow ? "shadow-inset-top-thin-dark" : ""
   }`;
   return (

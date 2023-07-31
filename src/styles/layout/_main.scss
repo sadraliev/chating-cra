@@ -1,5 +1,7 @@
 .chats {
+  min-width: 360px;
   width: 360px;
   border-right: $dark-light solid 2px;
   height: 100vh;
+  overflow-y: auto;
 }
