@@ -58,6 +58,12 @@
 .bg-dark-light {
     background-color: $dark-light;
 }
+.bg-black {
+    color: $black
+}
+.bg-white {
+    color: $white
+}
 
 .text-blue {
     color: $blue;
@@ -82,8 +88,13 @@
 .text-dark-light {
     color: $dark-light;
 }
+.text-black {
+    color: $black
+}
+.text-white {
+    color: $white
+}
 
-/* _flexbox.scss */
 
 .flex {
     display: flex;
@@ -215,4 +226,12 @@
 
 .flex-shrink-0 {
     flex-shrink: 0;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.shadow-inset-top-thin-dark {
+    box-shadow: 0px -1px 0px 0px rgba(32, 31, 30, 0.12) inset;
 }

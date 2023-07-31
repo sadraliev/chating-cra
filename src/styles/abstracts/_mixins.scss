@@ -1,3 +1,19 @@
+@mixin generate-heights($sizes){
+  @each $key, $value in $sizes {
+    .h-#{$key} {
+      height: $value;
+    }
+  }
+}
+
+@mixin generate-widths($sizes) {
+  @each $key, $value in $sizes {
+    .w-#{$key} {
+      width: $value;
+    }
+  }
+}
+
 @mixin generate-font-sizes($sizes) {
     @each $size, $value in $sizes {
         .fs-#{$size} {
@@ -13,3 +29,68 @@
         }
     }
 }
+
+@mixin margin-generator($sizes) {
+    @each $modifier, $size in $sizes {
+      .m-#{$modifier} {
+        margin: $size;
+      }
+  
+      .mt-#{$modifier} {
+        margin-top: $size;
+      }
+  
+      .mr-#{$modifier} {
+        margin-right: $size;
+      }
+  
+      .mb-#{$modifier} {
+        margin-bottom: $size;
+      }
+  
+      .ml-#{$modifier} {
+        margin-left: $size;
+      }
+      .mx-#{$modifier} {
+        margin-left: $size;
+        margin-right: $size;
+      }
+      .my-#{$modifier} {
+        margin-top: $size;
+        margin-bottom: $size;
+      }
+    }
+  }
+
+  @mixin padding-generator($sizes) {
+    @each $modifier, $size in $sizes {
+      .p-#{$modifier} {
+        padding: $size;
+      }
+  
+      .pt-#{$modifier} {
+        padding-top: $size;
+      }
+  
+      .pr-#{$modifier} {
+        padding-right: $size;
+      }
+  
+      .pb-#{$modifier} {
+        padding-bottom: $size;
+      }
+  
+      .pl-#{$modifier} {
+        padding-left: $size;
+      }
+      .px-#{$modifier} {
+        padding-left: $size;
+        padding-right: $size;
+      }
+      .py-#{$modifier} {
+        padding-top: $size;
+        padding-bottom: $size;
+      }
+    }
+  }
+  

@@ -35,3 +35,7 @@
 
 @include generate-font-sizes($font-sizes);
 @include generate-line-heights($line-heights);
+@include margin-generator($sizes);
+@include padding-generator($sizes);
+@include generate-heights($sizes);
+@include generate-widths($sizes)
