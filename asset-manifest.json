@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/chating-cra/static/css/main.6f50b174.css",
+    "main.js": "/chating-cra/static/js/main.1b886997.js",
+    "static/js/787.54ed6284.chunk.js": "/chating-cra/static/js/787.54ed6284.chunk.js",
+    "index.html": "/chating-cra/index.html",
+    "main.6f50b174.css.map": "/chating-cra/static/css/main.6f50b174.css.map",
+    "main.1b886997.js.map": "/chating-cra/static/js/main.1b886997.js.map",
+    "787.54ed6284.chunk.js.map": "/chating-cra/static/js/787.54ed6284.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f50b174.css",
+    "static/js/main.1b886997.js"
+  ]
+}
