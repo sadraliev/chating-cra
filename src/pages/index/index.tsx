@@ -11,6 +11,7 @@ import { convertTimestampToTime } from "../../utils/helpers";
 import { Message } from "../../components/Message";
 import useLazyQuery from "../../hooks/useLazyQuery";
 import { MessageResponse } from "../../interface/api/message.response";
+import { Input } from "../../components/Input";
 
 export const PageIndex: FC<IPage> = (props: IPage) => {
   const [chatId, setChatId] = useState<string>("");
@@ -48,16 +49,21 @@ export const PageIndex: FC<IPage> = (props: IPage) => {
           ))}
         </ul>
         <div className="dialog w-full">
-          <Header
-            shadow
-            text={DIALOG_TITLE}
-            icon={<IconFactory name="bubble" />}
-          />
-          <Message messages={messages} isLoading={messageLoader} />
-          <div className="footer footer--sticky">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto
-            tempora deleniti eos!
-          </div>
+          {messages && messages?.length > 1 ? (
+            <>
+              <Header
+                shadow
+                text={DIALOG_TITLE}
+                icon={<IconFactory name="bubble" />}
+              />
+              <Message messages={messages} isLoading={messageLoader} />
+              <div className="footer footer--sticky">
+                <Input />
+              </div>
+            </>
+          ) : (
+            <div>Выберите чат </div>
+          )}
         </div>
       </div>
     </div>

@@ -1,0 +1,36 @@
+.textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px 24px;
+  font-size: 15px;
+  line-height: 20px;
+
+  &--customize {
+    margin-bottom: 8px;
+    padding: 10px 16px;
+    border: 1px solid #a19f9d;
+    border-radius: 4px;
+    width: auto;
+
+    max-height: 3em;
+    overflow-y: auto; /* автоматическая прокрутка по вертикали при превышении содержимого высоты контейнера */
+    white-space: pre-wrap; /* учитывает пробелы и переносы строк */
+    word-wrap: break-word;
+
+    &:empty::before {
+      content: "Type message";
+      color: #a19f9d;
+      display: block;
+    }
+    &:focus {
+      outline: none;
+      border: 1px solid #6c6b69;
+    }
+  }
+
+  &--with-overflow {
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+}
