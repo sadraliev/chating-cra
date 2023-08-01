@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const checkResponse = (response: any) => response.data.response;
+const checkResponse = (response: any) => {
+  return response.data.response;
+};
 const catchError = (error: any) => error;
 
 const headers = {

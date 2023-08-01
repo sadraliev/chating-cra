@@ -4,22 +4,28 @@ import { Header } from "../../components/Header";
 import IconFactory from "../../components/Icons";
 import { CHAT_TITLE, DIALOG_TITLE } from "../../constants/text";
 import useQuery from "../../hooks/useQuery";
-import { getChatList } from "../../api/chat";
+import { getChatList, getMessageList } from "../../api/chat";
 import { ChatItemList } from "../../components/ChatItemList";
 import { ChatResponse } from "../../interface/api/chat.response";
 import { convertTimestampToTime } from "../../utils/helpers";
+import { Message } from "../../components/Message";
+import useLazyQuery from "../../hooks/useLazyQuery";
+import { MessageResponse } from "../../interface/api/message.response";
 
 export const PageIndex: FC<IPage> = (props: IPage) => {
   const [chatId, setChatId] = useState<string>("");
-  const {
-    data: chats,
-    isLoading,
-    error,
-  } = useQuery<ChatResponse[]>("chats", getChatList);
+  const [chats, chatsLoader, chatError] = useQuery<ChatResponse[]>(
+    "chats",
+    getChatList
+  );
 
+  const [fetchMessages, messages, messageError, messageLoader] = useLazyQuery<
+    MessageResponse[]
+  >("messages", getMessageList);
   const handleChat = (chatId: string) => {
     console.log("chatId", chatId);
     setChatId(chatId);
+    fetchMessages(chatId);
   };
 
   return (
@@ -47,6 +53,11 @@ export const PageIndex: FC<IPage> = (props: IPage) => {
             text={DIALOG_TITLE}
             icon={<IconFactory name="bubble" />}
           />
+          <Message messages={messages} isLoading={messageLoader} />
+          <div className="footer footer--sticky">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto
+            tempora deleniti eos!
+          </div>
         </div>
       </div>
     </div>

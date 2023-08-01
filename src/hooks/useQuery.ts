@@ -2,16 +2,11 @@ import { useState, useEffect, useRef } from "react";
 
 const queryCache: Record<string, any> = {};
 
-interface QueryResult<T> {
-  data: T | null;
-  error: Error | null;
-  isLoading: boolean;
-}
-
-function useQuery<T>(
+function useQuery<T, A extends any[] = []>(
   key: string,
-  queryFunction: () => Promise<T>
-): QueryResult<T> {
+  queryFunction: (...args: A) => Promise<T>,
+  ...args: A
+): [T | null, boolean, Error | null] {
   const isMounted = useRef(true);
 
   const [data, setData] = useState<T | null>(null);
@@ -25,7 +20,7 @@ function useQuery<T>(
         if (queryCache[key]) {
           setData(queryCache[key]);
         } else {
-          const result = await queryFunction();
+          const result = await queryFunction(...args);
           if (isMounted.current) {
             setData(result);
             queryCache[key] = result;
@@ -47,7 +42,7 @@ function useQuery<T>(
     };
   }, [key, queryFunction]);
 
-  return { data, error, isLoading };
+  return [data, isLoading, error];
 }
 
 export default useQuery;

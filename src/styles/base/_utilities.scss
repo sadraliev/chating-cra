@@ -1,238 +1,250 @@
 .font-primary {
-    font-family: $font-primary;
+  font-family: $font-primary;
 }
 
 .text-xs {
-    font-size: $fs-xs;
-    line-height: $lh-xs;
+  font-size: $fs-xs;
+  line-height: $lh-xs;
 }
 
 .font-normal {
-    font-weight: $fw-normal;
+  font-weight: $fw-normal;
 }
 
 .font-bold {
-    font-weight: $fw-bold;
+  font-weight: $fw-bold;
 }
 
 .text-sm {
-    font-size: $fs-sm;
-    line-height: $lh-sm;
+  font-size: $fs-sm;
+  line-height: $lh-sm;
 }
 
 .text-base {
-    font-size: $fs-base;
-    line-height: $lh-base;
+  font-size: $fs-base;
+  line-height: $lh-base;
 }
 
 .text-lg {
-    font-size: $fs-lg;
-    line-height: $lh-lg;
+  font-size: $fs-lg;
+  line-height: $lh-lg;
 }
 
 .text-xl {
-    font-size: $fs-xl;
-    line-height: $lh-xl;
+  font-size: $fs-xl;
+  line-height: $lh-xl;
 }
 
 .bg-blue {
-    background-color: $blue;
+  background-color: $blue;
 }
 
 .bg-blue-light {
-    background-color: $blue-light;
+  background-color: $blue-light;
 }
 
 .bg-black {
-    background-color: $black;
+  background-color: $black;
 }
 
 .bg-gray {
-    background-color: $gray;
+  background-color: $gray;
+}
+.bg-gray-lighter {
+  background-color: $gray-lighter;
 }
 
 .bg-dark {
-    background-color: $dark;
+  background-color: $dark;
 }
 
 .bg-dark-light {
-    background-color: $dark-light;
+  background-color: $dark-light;
 }
 .bg-black {
-    color: $black
+  color: $black;
 }
 .bg-white {
-    color: $white
+  color: $white;
 }
 
 .text-blue {
-    color: $blue;
+  color: $blue;
 }
 
 .text-blue-light {
-    color: $blue-light;
+  color: $blue-light;
 }
 
-
 .text-gray {
-    color: $gray;
+  color: $gray;
 }
 
 .text-dark {
-    color: $dark;
+  color: $dark;
 }
 
 .text-dark-light {
-    color: $dark-light;
+  color: $dark-light;
 }
 .text-black {
-    color: $black
+  color: $black;
 }
 .text-white {
-    color: $white
+  color: $white;
 }
 .text-gray-light {
-    color: $gray-light
+  color: $gray-light;
 }
 
-
-
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .inline-flex {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .flex-row {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .flex-row-reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .flex-col {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .flex-col-reverse {
-    flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
 .flex-wrap {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .flex-no-wrap {
-    flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 .flex-wrap-reverse {
-    flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
 }
 
 .items-start {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
 .items-center {
-    align-items: center;
+  align-items: center;
 }
 
 .items-end {
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 .items-baseline {
-    align-items: baseline;
+  align-items: baseline;
 }
 
 .items-stretch {
-    align-items: stretch;
+  align-items: stretch;
 }
 
 .justify-start {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .justify-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .justify-end {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .justify-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .justify-around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .justify-evenly {
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .self-auto {
-    align-self: auto;
+  align-self: auto;
 }
 
 .self-start {
-    align-self: flex-start;
+  align-self: flex-start;
 }
 
 .self-center {
-    align-self: center;
+  align-self: center;
 }
 
 .self-end {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 .self-stretch {
-    align-self: stretch;
+  align-self: stretch;
 }
 
 .flex-1 {
-    flex: 1;
+  flex: 1;
 }
 
 .flex-auto {
-    flex: auto;
+  flex: auto;
 }
 
 .flex-initial {
-    flex: initial;
+  flex: initial;
 }
 
 .flex-none {
-    flex: none;
+  flex: none;
 }
 
 .flex-grow {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .flex-grow-0 {
-    flex-grow: 0;
+  flex-grow: 0;
 }
 
 .flex-shrink {
-    flex-shrink: 1;
+  flex-shrink: 1;
 }
 
 .flex-shrink-0 {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .w-full {
-    width: 100%;
+  width: 100%;
 }
 
 .shadow-inset-top-thin-dark {
-    box-shadow: 0px -1px 0px 0px rgba(32, 31, 30, 0.12) inset;
+  box-shadow: 0px -1px 0px 0px rgba(32, 31, 30, 0.12) inset;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.m-0 {
+  margin: 0;
+}
+.p-0 {
+  padding: 0;
 }

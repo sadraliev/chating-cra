@@ -3,11 +3,13 @@ import { FC, SVGProps } from "react";
 import { BubbleIcon } from "./Bubble";
 import { PlaneIcon } from "./Plane";
 import { ClipIcon } from "./Clip";
+import { DeliveredIcon } from "./Delivered";
 
 const icons = {
   bubble: BubbleIcon,
   plane: PlaneIcon,
   clip: ClipIcon,
+  delivery: DeliveredIcon,
 };
 
 type IconName = keyof typeof icons;

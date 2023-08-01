@@ -1,4 +1,4 @@
 export const URLS = {
-    LIST: 'chat.list',
-    MESSAGES: 'chat.get'
-}
+  MESSAGE: "message.get",
+  CHAT: "chat.get",
+};
