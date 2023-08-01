@@ -1,34 +1,20 @@
-// Abstracts
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
-// Base
 @import "base/reset";
 @import "base/typography";
 @import "base/base";
 @import "base/utilities";
 
-// // Layout
 @import "layout/main";
-// @import 'layout/header';
-// @import 'layout/footer';
-// @import 'layout/nav';
-// @import 'layout/sidebar';
 
-// Components
 @import "components/header";
 @import "components/chatItemList";
 @import "components/message";
-@import "components/time"; // // Pages
-@import "components/footer"; // // Pages
-@import "components/input"; // // Pages
-// @import 'pages/home';
-// @import 'pages/about';
-// // Themes
-// @import 'themes/theme-dark';
-// @import 'themes/theme-light';
-// // Vendors
-// @import 'vendors/bootstrap';
+@import "components/time";
+@import "components/footer";
+@import "components/input";
+
 @include generate-font-sizes($font-sizes);
 @include generate-line-heights($line-heights);
 @include margin-generator($sizes);
