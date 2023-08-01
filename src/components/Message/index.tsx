@@ -8,7 +8,6 @@ import {
 import { SystemMessage } from "../SystemMessage";
 import { NewMessages } from "../SystemMessage/NewMessage";
 import { MessageItem } from "./MessageItem";
-import useScrollToBottom from "../../hooks/useScrollToBottom";
 
 interface MessageProps {
   messages: MessageResponse[] | null;
@@ -16,8 +15,6 @@ interface MessageProps {
 }
 
 export const Message: FC<MessageProps> = ({ messages }) => {
-  useScrollToBottom();
-
   if (!messages || !messages.length) {
     return null;
   }
